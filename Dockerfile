@@ -16,4 +16,6 @@ RUN wget https://github.com/plonk/peercast-yt/archive/v0.2.9.tar.gz && \
   echo -e "[Privacy]\npassword = ${PEERCAST_PASSWORD}" && \
   rm -rf /tmp/peercast-yt-0.2.9
 
-CMD ~/peercast-yt/peercast
+WORKDIR cd ~/peercast-yt
+
+ENTRYPOINT ./peercast
