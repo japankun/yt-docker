@@ -18,4 +18,4 @@ RUN wget https://github.com/plonk/peercast-yt/archive/v0.2.9.tar.gz && \
 
 WORKDIR cd ~/peercast-yt
 
-ENTRYPOINT ./peercast
+ENTRYPOINT ["./peercast"]
