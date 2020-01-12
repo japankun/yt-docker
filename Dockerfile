@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-ENV PEERCAST_PASSWORD 71447144
+ENV PEERCAST_PASSWORD 714471447144
 
 RUN apt update
 RUN apt install -y make g++ binutils-gold ruby ruby-dev curl python3
