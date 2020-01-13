@@ -13,7 +13,8 @@ RUN curl -OL https://github.com/plonk/peercast-yt/archive/v0.2.9.tar.gz && \
   make
 
 RUN cp -R peercast-yt-0.2.9/ui/linux/peercast-yt /tmp && \
-  rm -rf /tmp/peercast-yt-0.2.9
+  rm -rf /tmp/peercast-yt-0.2.9 && \
+  rm /tmp/v0.2.9.tar.gz
 
 EXPOSE 7144
 
