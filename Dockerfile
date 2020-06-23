@@ -2,8 +2,10 @@ FROM ubuntu:latest
 
 ENV PEERCAST_PASSWORD=71447144
 
+WORKDIR /tmp
+
 RUN apt update && \
-  apt install -y make g++ binutils-gold ruby ruby-dev curl python3 && \
+  apt install -y make g++ binutils-gold ruby ruby-dev curl python3 librtmp-dev && \
   gem install fileutils json && \
   curl -OL https://github.com/plonk/peercast-yt/archive/v0.3.2.tar.gz && \
   tar xvf v0.3.2.tar.gz && \
